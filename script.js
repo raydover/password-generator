@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Instructor Provided Template: Anthony Cooper
+// Instructor Provided: Anthony Cooper
 function generatePassword() {
   var lowercase = "abcdefghijklmnopqrstuvwxyz";
   var numbers = "0123456789";
