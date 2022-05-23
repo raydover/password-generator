@@ -1,4 +1,4 @@
-# PasswordGenerator Starter Code
+# Password Generator Starter Code
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ This challenge requires me to use existing code to generate a random password ba
 
 ## Visuals
 
-![Horiseon Screenshot](Insert Screen Shot)
+![Password Generator Screenshot](Insert Screen Shot)
 
 ## Authors and Acknowledgements
 
