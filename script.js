@@ -9,12 +9,21 @@ function generatePassword() {
   var uppercase = lowercase.toUpperCase();
 
   var input = parseInt(prompt("Enter a length between 8 and 128 characters"));
-
+  // Password lenth & Invalid message
   if (input >= 8 && input <= 128) {
-    // Enter Good Code Here
   } else {
     alert("INVALID ENTRY! Try Again.");
   }
+  // Enter Good Code Here
+  // Question:lowercase
+  var lowercase = confirm ("Would you like to use lowercase letter?");
+  if (lowercase) {
+    possible += lowercase
+  }
+
+
+
+
 
   return "Enter a length between 8 and 128 characters";
 }
