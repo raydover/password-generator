@@ -35,10 +35,13 @@ function generatePassword() {
      choice += special
    }
 
+   // Question: Special Characters
+   var numbers = confirm ("Would you like to use special characters?");
+   if (numbers) {
+     choice += numbers
+   }
 
-
-
-  return "Enter a length between 8 and 128 characters";
+  return "";
 }
 
 // Write password to the #password input
