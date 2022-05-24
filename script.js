@@ -18,29 +18,29 @@ function generatePassword() {
 
   // Enter Good Code Here
   // Question:lowercase
-  var lowercase = confirm ("Would you like to use lowercase letter?");
+  var lowercase = confirm ("Would you like to use any lowercase letters?");
   if (lowercase) {
     choice += lowercase
   }
 
    // Question:lowercase
-   var uppercase = confirm ("Would you like to use uppercase letter?");
+   var uppercase = confirm ("Would you like to use any uppercase letters?");
    if (uppercase) {
      choice += uppercase
    }
 
    // Question: Special Characters
-   var special = confirm ("Would you like to use special characters?");
+   var special = confirm ("Would you like to use any special characters?");
    if (special) {
      choice += special
    }
 
-   // Question: Special Characters
-   var numbers = confirm ("Would you like to use special characters?");
-   if (numbers) {
-     choice += numbers
-   }
-
+    // Question: Numbers
+    var numbers = confirm ("Would you like to use any numbers?");
+    if (numbers) {
+      choice += numbers
+    }
+  
   return "";
 }
 
