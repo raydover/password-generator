@@ -5,42 +5,45 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
   var lowercase = "abcdefghijklmnopqrstuvwxyz";
   var uppercase = lowercase.toUpperCase();
-  var special = "#$%&()*+,-./:;<=>?";
   var numbers = "0123456789";
+  var special = "#$%&()*+,-./:;<=>?";
   var choice = "";
-  
+
   var input = parseInt(prompt("Enter a length between 8 and 128 characters."));
   // Password lenth & Invalid message
   if (input >= 8 && input <= 128) {
   } else {
     alert("INVALID ENTRY! Try Again. Enter a length between 8 and 128 characters.");
+    var input = parseInt(prompt("Enter a length between 8 and 128 characters."));
   }
 
   // Enter Good Code Here
   // Question:lowercase
-  var lowercase = confirm ("Would you like to use any lowercase letters?");
+  var lowercase = confirm("Would you like to use any lowercase letters?");
   if (lowercase) {
     choice += lowercase
   }
 
-   // Question:lowercase
-   var uppercase = confirm ("Would you like to use any uppercase letters?");
-   if (uppercase) {
-     choice += uppercase
-   }
+  // Question:lowercase
+  var uppercase = confirm("Would you like to use any uppercase letters?");
+  if (uppercase) {
+    choice += uppercase
+  }
 
-   // Question: Special Characters
-   var special = confirm ("Would you like to use any special characters?");
-   if (special) {
-     choice += special
-   }
+  // Question: Numbers
+  var numbers = confirm("Would you like to use any numbers?");
+  if (numbers) {
+    choice += numbers
+  }
 
-    // Question: Numbers
-    var numbers = confirm ("Would you like to use any numbers?");
-    if (numbers) {
-      choice += numbers
-    }
-  
+  // Question: Special Characters
+  var special = confirm("Would you like to use any special characters?");
+  if (special) {
+    choice += special
+    var input = parseInt(prompt("Enter a special character that you would like to us."));
+  }
+
+
   return "";
 }
 
