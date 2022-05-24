@@ -14,6 +14,7 @@ function generatePassword() {
   if (input >= 8 && input <= 128) {
   } else {
     alert("INVALID ENTRY! Try Again. Enter a length between 8 and 128 characters.");
+    return generatePassword();
   }
 
   // Enter Good Code Here

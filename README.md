@@ -18,7 +18,7 @@ This challenge requires me to use existing code to generate a random password ba
 
 ## Visuals
 
-![Password Generator Screenshot](Insert Screen Shot)
+![Password Generator Screenshot](/Users/raymonddover/Bootcamp/Homework/password-generator/Password-Generator.png)
 
 ## Authors and Acknowledgements
 
