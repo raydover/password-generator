@@ -14,7 +14,6 @@ function generatePassword() {
   if (input >= 8 && input <= 128) {
   } else {
     alert("INVALID ENTRY! Try Again. Enter a length between 8 and 128 characters.");
-    var input = parseInt(prompt("Enter a length between 8 and 128 characters."));
   }
 
   // Enter Good Code Here
@@ -40,11 +39,16 @@ function generatePassword() {
   var special = confirm("Would you like to use any special characters?");
   if (special) {
     choice += special
-    var input = parseInt(prompt("Enter a special character that you would like to us."));
   }
 
+  // Generate final password
+  var finalPassword = "";
+  console.log(choice);
+  for (var i = 0; i < input; i++) {
+    finalPassword += choice.charAt(Math.floor(Math.random() * choice.length));
+  }
 
-  return "";
+  return finalPassword;
 }
 
 // Write password to the #password input
