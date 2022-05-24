@@ -41,7 +41,7 @@ function generatePassword() {
     choice += special
   }
 
-  // Generate final password
+  // Declare variable final password
   var finalPassword = "";
   console.log(choice);
   for (var i = 0; i < input; i++) {
