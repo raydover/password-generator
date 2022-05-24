@@ -9,11 +9,11 @@ function generatePassword() {
   var numbers = "0123456789";
   var choice = "";
   
-  var input = parseInt(prompt("Enter a length between 8 and 128 characters"));
+  var input = parseInt(prompt("Enter a length between 8 and 128 characters."));
   // Password lenth & Invalid message
   if (input >= 8 && input <= 128) {
   } else {
-    alert("INVALID ENTRY! Try Again.");
+    alert("INVALID ENTRY! Try Again. Enter a length between 8 and 128 characters.");
   }
 
   // Enter Good Code Here
@@ -24,14 +24,16 @@ function generatePassword() {
   }
 
    // Question:lowercase
-   var uppercase = confirm ("Would you like to use lowercase letter?");
-   if (upppercase) {
-     choice += upppercase
+   var uppercase = confirm ("Would you like to use uppercase letter?");
+   if (uppercase) {
+     choice += uppercase
    }
 
-
-  
-
+   // Question: Special Characters
+   var special = confirm ("Would you like to use special characters?");
+   if (special) {
+     choice += special
+   }
 
 
 
