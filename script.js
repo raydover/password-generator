@@ -42,7 +42,7 @@ function generatePassword() {
     choice += special
   }
 
-  // Declare variable final password
+  // Enter final password
   var finalPassword = "";
   console.log(choice);
   for (var i = 0; i < input; i++) {
