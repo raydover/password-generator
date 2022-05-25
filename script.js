@@ -8,43 +8,42 @@ function generatePassword() {
   var numbers = "0123456789";
   var special = "#$%&()*+,-./:;<=>?";
   var choice = "";
+  var finalPassword = "";
 
   var input = parseInt(prompt("Enter a length between 8 and 128 characters."));
   // Password lenth & Invalid message
   if (input >= 8 && input <= 128) {
   } else {
     alert("INVALID ENTRY! Try Again. Enter a length between 8 and 128 characters.");
-    return generatePassword();
+    return "";
   }
 
   // Enter Good Code Here
   // Question:lowercase
-  var lowercase = confirm("Would you like to use any lowercase letters?");
-  if (lowercase) {
+  var lowercaseQ = confirm("Would you like to use any lowercase letters?");
+  if (lowercaseQ) {
     choice += lowercase
   }
 
   // Question:lowercase
-  var uppercase = confirm("Would you like to use any uppercase letters?");
-  if (uppercase) {
+  var uppercaseQ = confirm("Would you like to use any uppercase letters?");
+  if (uppercaseQ) {
     choice += uppercase
   }
 
   // Question: Numbers
-  var numbers = confirm("Would you like to use any numbers?");
-  if (numbers) {
+  var numbersQ = confirm("Would you like to use any numbers?");
+  if (numbersQ) {
     choice += numbers
   }
 
   // Question: Special Characters
-  var special = confirm("Would you like to use any special characters?");
-  if (special) {
+  var specialQ = confirm("Would you like to use any special characters?");
+  if (specialQ) {
     choice += special
   }
 
   // Enter final password
-  var finalPassword = "";
-  console.log(choice);
   for (var i = 0; i < input; i++) {
     finalPassword += choice.charAt(Math.floor(Math.random() * choice.length));
   }
