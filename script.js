@@ -41,6 +41,9 @@ function generatePassword() {
   var specialQ = confirm("Would you like to use any special characters?");
   if (specialQ) {
     choice += special
+  } else {
+    alert("You will have to Choose atleast one Option.");
+    return "";
   }
 
   // Enter final password
