@@ -12,9 +12,9 @@ This challenge requires me to use existing code to generate a random password ba
 
 ## Resources
 
--[LIVE SITE](https://github.com/raydover/password-generator)
+-[LIVE SITE](https://raydover.github.io/password-generator/)
 
--[Repository](https://git@github.com:raydover/password-generator.git)
+-[Repository](https://github.com/raydover/password-generator)
 
 ## Visuals
 
